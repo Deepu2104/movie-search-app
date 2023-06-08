@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.search-icon {
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: #fff;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 224px;
+  /* height: 300px; */
+  border: 1px solid rgb(21, 20, 20);
+}
+
+.movie img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  max-height: 40px;
+  /* Adjust the value as needed */
+}
+
+.movie p,
+.movie span {
+  font-size: 14px;
+  margin: 0;
+}
+
+.no-movies {
+  font-size: 16px;
+  color: #888;
+  text-align: center;
+}
